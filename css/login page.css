@@ -1,0 +1,141 @@
+body{
+    width: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    background: rgb(255, 190, 90);
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#company-logo{
+    height: 100%;
+    position: absolute;
+    left: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* top: 50%; */
+    left: 62.5%;
+    bottom: 0%;
+    /* transform: translate(70%, -50%); */
+    background: white;
+    width: 37.5%;
+    height: 100%;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    /* padding: 600px; */
+}
+
+.center h1{
+    text-align: center;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .text_field{
+    border-bottom: 2px solid #8C8989;
+    position:relative;
+    margin: 25px 0;
+    margin-top: 12.5px;
+}
+
+.text_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 20px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.text_field label{
+    position: absolute;
+    top: 4%;
+    left: 25px;
+    color: #8C8989;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.text_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #FFAE42;
+    transition: .5s;
+}
+
+.text_field input:focus ~ label,
+.text_field input:valid ~ label{
+    top: -5px;
+    color: #FFAE42;
+}
+
+.text_field input:focus ~ span::before,
+.text_field input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #8C8989;
+    cursor: pointer;
+    text-align: right;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 26px;
+    background-color:#FFAE42;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    margin: 7.5px 0;
+}
+
+input[type="submit"]:hover{
+    border-color:#FFAE42;
+    transition: .5s;
+}
+
+.fa-circle-user{
+    color: #8C8989;
+}
+
+.fa-lock{
+    color: #8C8989;
+}
